@@ -17,10 +17,8 @@ pyflyte run example.py training_workflow \
 pyflyte run --remote example.py training_workflow --hyperparameters '{"C": 0.1}'
 
 # Register workflow
-#pyflyte register example.py
-flytectl register files \
-    --project flytesnacks \
-    --domain development \
-    --version "$(git rev-parse HEAD)"
+pyflyte register example.py
+pyflyte register launchplan.py -v test_version
+
 
 # Run workflow in UI
