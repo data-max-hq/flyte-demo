@@ -4,8 +4,8 @@ install:
 package:
 	pip install flytekit
 
-sandbox:
-	flytectl sandbox start
+demo:
+	flytectl demo start
 
 teardown:
-	flytectl sandbox teardown
+	flytectl demo teardown
