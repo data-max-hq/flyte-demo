@@ -9,3 +9,12 @@ demo:
 
 teardown:
 	flytectl demo teardown
+
+register-example:
+	pyflyte register example.py
+
+register-launchplan:
+	pyflyte register launchplan.py \
+    	--project flytesnacks \
+    	--domain staging \
+    	--version v3
