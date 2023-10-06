@@ -16,7 +16,7 @@ def date_formatter_wf(kickoff_time: datetime):
 
 # creates a launch plan that runs every minute.
 cron_lp = LaunchPlan.get_or_create(
-    name="my_cron_scheduled_lp",
+    name="cron_scheduled_lp",
     workflow=date_formatter_wf,
     schedule=CronSchedule(
         # Note that the ``kickoff_time_input_arg`` matches the workflow input we defined above: kickoff_time
