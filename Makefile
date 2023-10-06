@@ -16,5 +16,5 @@ register-example:
 register-launchplan:
 	pyflyte register launchplan.py \
     	--project flytesnacks \
-    	--domain staging \
-    	--version v3
+    	--domain development \
+    	--version v2
